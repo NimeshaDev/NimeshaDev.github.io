@@ -89,6 +89,9 @@ h1 em{font-style:normal;color:var(--accent)}
 .term-bar i{width:11px;height:11px;border-radius:50%;background:#3A4F4B}
 .term-bar small{margin-left:auto;color:var(--term-dim);font-size:11px}
 .term pre{margin:0;padding:18px 18px 20px;overflow-x:auto;font:inherit;white-space:pre}
+.report-shot{margin:0;min-width:0}
+.report-shot img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line);box-shadow:0 24px 60px -24px rgba(8,30,26,.45);background:#fff}
+.report-shot figcaption{margin-top:10px;font-size:13px;color:var(--muted)}
 .t-dim{color:var(--term-dim)}
 .t-pass{color:#5BD68C;font-weight:600}
 .t-cmd{color:#8FE3CF}
@@ -212,20 +215,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
         </div>
       </div>
 
-      <div class="term" aria-label="A playful pytest run summarising my profile">
-        <div class="term-bar"><i></i><i></i><i></i><small>nimesha@dublin: ~/career</small></div>
-<pre><span class="line"><span class="t-dim">$</span> <span class="t-cmd">pytest tests/test_nimesha.py -v</span></span>
-<span class="line t-dim">collected 6 items</span>
-
-<span class="line" style="animation-delay:.15s">test_python_playwright_pytest   <span class="t-pass">PASSED</span></span>
-<span class="line" style="animation-delay:.3s">test_bdd_gherkin_scenarios      <span class="t-pass">PASSED</span></span>
-<span class="line" style="animation-delay:.45s">test_api_postman_requests       <span class="t-pass">PASSED</span></span>
-<span class="line" style="animation-delay:.6s">test_ci_github_actions          <span class="t-pass">PASSED</span></span>
-<span class="line" style="animation-delay:.75s">test_istqb_foundation           <span class="t-pass">PASSED</span></span>
-<span class="line" style="animation-delay:.9s">test_msc_first_class            <span class="t-pass">PASSED</span></span>
-
-<span class="line" style="animation-delay:1.05s"><span class="t-sum">6 passed</span> <span class="t-dim">· 0 failed · ready to hire</span></span></pre>
-      </div>
+      <figure class="report-shot">
+        <a href="https://nimeshadev.github.io/playwright-pytest-qa-framework/" target="_blank" rel="noopener">
+          <img src="assets/test-report.png" alt="pytest-html report from my QA framework: 8 UI and BDD tests passed on Chromium">
+        </a>
+        <figcaption>Real CI test report from my Playwright + pytest framework, runs on Chromium, Firefox and WebKit · <a href="https://nimeshadev.github.io/playwright-pytest-qa-framework/" target="_blank" rel="noopener">See the latest reports ↗</a></figcaption>
+      </figure>
     </div>
   </section>
 
@@ -328,6 +323,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
           <h3>Sentiment Analysis of IMDb Reviews</h3>
           <p>Compared Naive Bayes, Logistic Regression, SVM and Random Forest for binary sentiment classification on the IMDb Large Movie Review Dataset, using TF-IDF, stratified 10-fold cross-validation and paired t-tests.</p>
           <div class="stack"><span>Python</span><span>scikit-learn</span><span>TF-IDF</span></div>
+          <a class="more" href="https://github.com/NimeshaDev/imdb-sentiment-analysis" target="_blank" rel="noopener">View repository ↗</a>
         </article>
 
         <article class="proj">
@@ -352,7 +348,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       <div class="sec-head"><h2>Experience</h2><span class="sec-tag">// test_experience.py</span></div>
       <ol class="timeline">
         <li class="job">
-          <div><div class="co">Paymate Software</div><div class="where">Remote · Canada</div></div>
+          <div><div class="co">Paymate Software</div><div class="where">Remote · Canada</div><div class="where">May 2022 - Aug 2025</div></div>
           <div><h3>QA Engineer</h3><p>Tested a cloud-based SaaS payroll and HR platform: payroll calculations, tax deductions, financial data accuracy and the Time &amp; Attendance system.</p></div>
         </li>
         <li class="job">
